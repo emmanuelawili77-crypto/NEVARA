@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | NÉVARA</title>
+    <meta name="description" content="Get in touch with NÉVARA for orders, sizing, styling or collaborations.">
+    <meta name="theme-color" content="#0b0b0a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NÉVARA">
+    <meta property="og:title" content="Contact | NÉVARA">
+    <meta property="og:description" content="Get in touch with NÉVARA for orders, sizing, styling or collaborations.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">
+        <p>FREE DELIVERY ON ORDERS ABOVE ₦100,000</p>
+    </div>
+    <header class="header header--solid">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="NÉVARA home">NÉVARA</a>
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="collections.html">Collections</a><a href="about.html">About</a><a href="contact.html" class="active" aria-current="page">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="shop.html" aria-label="Search the shop"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="wish-count" hidden>0</span></a>
+                <a href="cart.html" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" hidden>0</span></a>
+                <button class="menu-toggle" type="button" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">GET IN TOUCH</span>
+                <h1>Contact</h1>
+                <p>Questions about an order, sizing or a collaboration? Send us a message and we will get back to you.</p>
+            </div>
+        </section>
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>NÉVARA</h2>
+                <p>Designed in Lagos, Nigeria.</p>
+                <div class="contact-item"><small>EMAIL</small><a href="#" data-contact="email"></a></div>
+                <div class="contact-item"><small>PHONE</small><a href="#" data-contact="phone"></a></div>
+                <div class="contact-item"><small>BASED IN</small><span data-contact="address"></span></div>
+                <a href="#" class="btn btn-dark" id="whatsapp-link" target="_blank" rel="noopener noreferrer" hidden>CHAT ON WHATSAPP <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="contact-form-wrap">
+                <h2>Send a message</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-two">
+                        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" type="text" autocomplete="name" required></div>
+                        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+                    </div>
+                    <div class="field"><label for="c-subject">Subject</label>
+                        <select id="c-subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option>Order enquiry</option>
+                            <option>Sizing and fit</option>
+                            <option>Styling</option>
+                            <option>Collaboration or press</option>
+                            <option>Something else</option>
+                        </select></div>
+                    <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" required></textarea></div>
+                    <div class="honeypot" aria-hidden="true"><label>Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+                    <button type="submit" class="btn btn-dark btn-block">SEND MESSAGE <i class="fa-solid fa-arrow-right"></i></button>
+                    <p class="form-status" id="contact-status" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">NÉVARA</a>
+                <p>A Statement in Every Stitch.</p>
+                <span>Lagos, Nigeria 🇳🇬</span>
+            </div>
+            <div class="footer-column">
+                <h4>SHOP</h4>
+                <a href="shop.html">All Products</a>
+                <a href="shop.html?category=men">Men</a>
+                <a href="shop.html?category=women">Women</a>
+                <a href="shop.html?category=streetwear">Streetwear</a>
+                <a href="shop.html?category=heritage">Heritage</a>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <a href="about.html">Our Story</a>
+                <a href="collections.html">Collections</a>
+                <a href="contact.html">Contact</a>
+                <a href="shipping-returns.html">Shipping &amp; Delivery</a>
+                <a href="shipping-returns.html#returns">Returns</a>
+            </div>
+            <div class="footer-column">
+                <h4>FOLLOW</h4>
+                <a href="#" data-social="instagram" hidden>Instagram</a>
+                <a href="#" data-social="tiktok" hidden>TikTok</a>
+                <a href="#" data-social="facebook" hidden>Facebook</a>
+                <a href="#" data-social="x" hidden>X</a>
+                <a href="contact.html">Get in touch</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 NÉVARA. All Rights Reserved.</p>
+            <p>A Statement in Every Stitch.</p>
+        </div>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
